@@ -17,24 +17,21 @@ alias df='df -h'
 alias free='free -h'
 alias myip="ip -f inet address | grep inet | grep -v 'lo$' | cut -d ' ' -f 6,13 && curl ifconfig.me && echo ' external ip'"
 alias x="exit"
-alias rss='newsboat'
-
 # Dotfiles & Files
-#alias bs='micro ~/.bashrc'
-#alias ewm='micro ~/.config/bspwm/bspwmrc'
-#alias ehk='micro ~/.config/sxhkd/sxhkdrc'
+alias bs='micro ~/.bashrc'
+alias ewm='micro ~/.config/bspwm/bspwmrc'
+alias ehk='micro ~/.config/sxhkd/sxhkdrc'
 alias reload='source ~/.bashrc'
-alias v="vim"
-alias vv="vim ."
+alias v="nvim"
+alias vv="nvim ."
 alias e="micro"
 alias gd="cd ~/Downloads"
-
 # Git aliases
-#alias gp="git push -u origin main"
-#alias gsave="git commit -m 'save'"
-#alias gs="git status"
-#alias gc="git clone"
-#alias tr="tree"
+alias gp="git push -u origin main"
+alias gsave="git commit -m 'save'"
+alias gs="git status"
+alias gc="git clone"
+alias tr="tree"
 
 # Dunst
 alias hi="notify-send 'Hi there!' 'Welcome to my bspwm desktop! ' -i ''"
@@ -46,7 +43,6 @@ alias egrep='grep --color=auto'
 export PATH="~/bin:$PATH"
 export PATH="~/.local/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
-export PATH="$HOME/bin/bspswallow:$PATH" 
  export VISUAL=nvim;
  export EDITOR=nvim;
 # PS1 Customization
@@ -65,9 +61,4 @@ ENDC="\\[\\e[0m\\]"
 if [[ -n "$SSH_CLIENT" ]]; then ssh_message="-ssh_session"; fi
 PS1="${MAGENTA}\t ${GREEN}\u ${WHITE}at ${YELLOW}\h${RED}${ssh_message} ${WHITE}in ${BLUE}\w \n${CYAN}\$${ENDC} "
 
-# neofetch
-fastfetch
-
-# Install Ruby Gems to ~/gems
-export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
+neofetch

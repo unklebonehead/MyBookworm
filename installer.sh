@@ -13,7 +13,7 @@ sudo apt install -y build-essential
 xdg-user-dirs-update
 mkdir ~/Screenshots/
 
-bash ~/bookworm-scripts/resources/bspwm-commands
+bash ~/MyBookworm/resources/bspwm-commands
 
 # Network File Tools/System Events
 sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends xfce4-power-manager
@@ -80,6 +80,13 @@ sudo apt install -y  evince pdfarranger
 # Others
 sudo apt install -y numlockx figlet galculator cpu-x udns-utils whois curl tree
 
+# Install Lightdm Console Display Manager
+# sudo apt install -y lightdm lightdm-gtk-greeter-settings
+# sudo systemctl enable lightdm
+
+# Install the Ly Console Display Manager
+bash ~/MyBookworm/ly.sh
+
 ########################################################
 # End of script for default config
 #
@@ -87,9 +94,9 @@ sudo apt install -y numlockx figlet galculator cpu-x udns-utils whois curl tree
 ## These two scripts will install nerdfonts and copy my configuration files into the ~/.config directory
 ## Configuration uses
 
-bash ~/bookworm-scripts/resources/nerdfonts.sh
+bash ~/MyBookworm/resources/nerdfonts.sh
 
-\cp ~/bookworm-scripts/resources/.bashrc ~
+\cp ~/MyBookworm/resources/.bashrc ~
 
 
 sudo apt autoremove
