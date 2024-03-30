@@ -9,6 +9,9 @@ sudo apt install -y xorg xserver-xorg xbacklight xbindkeys xvkbd xinput
 # PACKAGE INCLUDES build-essential.
 sudo apt install -y build-essential
 
+# bspwm & polybar
+bash ~/bookworm-scripts/resources/bspwm-commands
+
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
 mkdir ~/Screenshots/
@@ -66,8 +69,6 @@ sudo apt install -y exa
 # Packages needed for window manager installation
 sudo apt install -y picom rofi dunst libnotify-bin unzip wmctrl xdotool
 
-# Geany Text Editor
-# sudo apt install -y geany geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode
 sudo apt install -y mousepad
 
 # My Favorites
@@ -85,7 +86,7 @@ sudo apt install -y numlockx figlet galculator cpu-x udns-utils whois curl tree
 # sudo systemctl enable lightdm
 
 # Install the Ly Console Display Manager
-bash ~/MyBookworm/ly.sh
+#bash ~/MyBookworm/ly.sh
 
 ########################################################
 # End of script for default config
